@@ -1,0 +1,162 @@
+*{
+    font-size: 16px;
+}
+
+
+/* header */
+header{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .logo i{
+    color: green;
+    font-size: 2.5rem;
+}
+header .logo span{
+    font-size: 2rem;
+}
+
+.menu .nav-item{
+    margin: 0 0.8rem;
+}
+
+.menu .nav-item.active a,
+.menu .nav-item:hover a{
+    color: green !important;
+}
+
+
+
+.menu .nav-item a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: green;
+    transition: all 0.2s;
+}
+
+.menu .nav-item.active a::after,
+.menu .nav-item:hover a::after{
+    width: 100%;
+}
+.menu .navbar-nav .nav-item a{
+    color: white;
+}
+
+/* carousel */
+.carousel-item{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-item:nth-child(1){
+    background-image: url(./../images/finland.jpg);
+}
+.carousel-item:nth-child(2){
+    background-image: url(./../images/mountains.jpg);
+}
+.carousel-item:nth-child(3){
+    background-image: url(./../images/mountains-1.jpg);
+}
+
+
+.carousel__thumb{
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.carousel__thumb img{
+    border-radius: 50%;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active{
+    color: green;
+}
+/* Project */
+.nav-item{
+    /* border: 1px solid #8e8f97; */
+    margin: 0 5px;
+    border-radius: 10px;
+    
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: green;
+}
+
+.project__content .card{
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 6px #f2f2f2;
+}
+.project__content .card-body{
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    border-radius: 0 0 30px 30px;
+    transition: all 0.5s;
+}
+.project__content .card:hover .card-body{
+    border-color: green;
+    border-top-color: transparent;
+}
+.project__content .card h4{
+    font-size: 19px;
+}
+/* white-space: nowrap
+overflow: hiden
+text-overflow: elippsis */
+
+.project__content .card:hover h4{
+    color: green;
+}
+
+/* service */
+
+#service {
+    background-image: url("./../images/3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#service .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004d;
+}
+.service__title{
+    position: relative;
+}
+.service__content .card {
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #ffffff07;
+    color:white;
+    border:1px solid #ffffff63;
+    backdrop-filter: blur(4px);
+}
+.service__content .card-body i{
+    font-size: 50px;
+    color: green;
+}
+.service__content .row:hover .card{
+    background-color: black;
+    transition: all 0.5s;
+}
